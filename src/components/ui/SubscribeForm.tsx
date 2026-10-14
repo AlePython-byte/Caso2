@@ -27,7 +27,7 @@ export function SubscribeForm() {
       />
       <button
         type="submit"
-        className="h-[26px] rounded-full bg-wine px-4 text-[8px] font-bold text-white transition hover:scale-105 hover:bg-wine-dark active:scale-95"
+        className="h-[26px] rounded-full bg-wine px-4 text-[8px] font-extrabold text-white transition hover:scale-105 hover:bg-wine-dark active:scale-95"
       >
         {sent ? "THANKS!" : "SUBSCRIBE"}
       </button>

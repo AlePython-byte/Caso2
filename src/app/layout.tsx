@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Mrs_Saint_Delafield, Poppins } from "next/font/google";
+import { Mrs_Saint_Delafield, Nunito } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-nunito",
 });
 
 const script = Mrs_Saint_Delafield({
@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${poppins.variable} ${script.variable} antialiased`}>
+    <html lang="en" className={`${nunito.variable} ${script.variable} antialiased`}>
       <body>{children}</body>
     </html>
   );
