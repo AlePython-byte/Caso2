@@ -1,9 +1,10 @@
 import { footerColumns } from "@/data/content";
+import { SubscribeForm } from "@/components/ui/SubscribeForm";
 
 export function Footer() {
   return (
     <footer className="bg-blush px-[40px] pb-[9px] pt-[30px]">
-      <p className="whitespace-nowrap rounded-full bg-wine py-[15px] text-center text-[15px] font-semibold text-white">
+      <p className="whitespace-nowrap rounded-full bg-wine transition hover:shadow-lg py-[15px] text-center text-[15px] font-semibold text-white">
         Dakingo – Your Trusted FSSAI Certified Online Bakery for Every Celebration
       </p>
       <div className="mt-[14px] flex">
@@ -31,12 +32,7 @@ export function Footer() {
             ))}
           </div>
           <div className="mt-[18px] flex items-center gap-3">
-            <div className="flex h-[26px] flex-1 items-center rounded-full border border-wine/50 bg-white px-3 text-[8px] text-neutral-400">
-              Enter Email Address
-            </div>
-            <button className="h-[26px] rounded-full bg-wine px-4 text-[8px] font-bold text-white">
-              SUBSCRIBE
-            </button>
+            <SubscribeForm />
             <span className="w-[70px] text-center text-[7px] text-wine">
               Hey, need any help?
             </span>

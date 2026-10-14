@@ -12,7 +12,7 @@ export function Bestsellers() {
         {bestsellers.map((p) => (
           <article
             key={p.name}
-            className="relative h-[138px] w-[143px] rounded-[10px] bg-white p-2 shadow-[0_2px_10px_rgba(157,31,42,0.12)]"
+            className="group relative h-[138px] w-[143px] cursor-pointer rounded-[10px] bg-white p-2 shadow-[0_2px_10px_rgba(157,31,42,0.12)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(157,31,42,0.25)]"
           >
             <Heart
               size={9}
@@ -24,7 +24,7 @@ export function Bestsellers() {
                 alt={p.name}
                 width={200}
                 height={148}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover transition duration-300 group-hover:scale-110"
               />
             </div>
             <p className="mt-[6px] text-[9px] font-bold leading-[11px] text-wine">
@@ -44,7 +44,7 @@ export function Bestsellers() {
         ))}
       </div>
       <div className="mt-[10px] flex justify-end">
-        <button className="rounded-full bg-wine px-[18px] py-[7px] text-[9px] font-bold text-white">
+        <button className="rounded-full bg-wine px-[18px] py-[7px] text-[9px] font-bold text-white transition hover:scale-105 hover:bg-wine-dark active:scale-95">
           VIEW ALL
         </button>
       </div>

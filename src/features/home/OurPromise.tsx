@@ -30,7 +30,7 @@ export function OurPromise() {
                   key={s.label}
                   className="flex w-[56px] flex-col items-center gap-[6px] text-center"
                 >
-                  <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full border-[1.5px] border-wine text-wine">
+                  <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full border-[1.5px] border-wine text-wine transition duration-300 hover:bg-wine hover:text-white">
                     {s.icon}
                   </span>
                   <span className="text-[6.5px] font-bold leading-[8px] text-wine">
@@ -41,7 +41,7 @@ export function OurPromise() {
             </div>
           </div>
           <div className="flex h-[144px] items-center gap-3 rounded-[10px] bg-[#fbe2e0] p-3">
-            <Ticket size={44} className="text-amber-500" />
+            <Ticket size={44} className="animate-bounce text-amber-500" />
             <div>
               <p className="text-[13px] font-extrabold uppercase text-wine">
                 The Magical Ticket
@@ -51,7 +51,7 @@ export function OurPromise() {
                 <br />
                 Win offers worth Rs. 750
               </p>
-              <button className="mt-2 rounded-full bg-wine px-4 py-[6px] text-[8px] font-bold text-white">
+              <button className="mt-2 rounded-full bg-wine px-4 py-[6px] text-[8px] font-bold text-white transition hover:scale-105 hover:bg-wine-dark active:scale-95">
                 UNLOCK NOW
               </button>
             </div>
@@ -73,13 +73,13 @@ export function OurPromise() {
         </div>
         <div className="grid flex-1 grid-cols-2 gap-x-[9px] gap-y-[11px]">
           {gallery.map((src) => (
-            <div key={src} className="h-[111px] overflow-hidden rounded-[10px]">
+            <div key={src} className="group h-[111px] overflow-hidden rounded-[10px]">
               <Image
                 src={src}
                 alt="Dakingo cakes"
                 width={288}
                 height={222}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
               />
             </div>
           ))}
