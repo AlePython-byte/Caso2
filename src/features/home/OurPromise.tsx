@@ -13,14 +13,14 @@ const avatars = [1, 2, 3, 4, 5].map((n) => `/images/avatar-${n}.jpg`);
 
 export function OurPromise() {
   return (
-    <section className="px-[25px] pt-[10px]">
+    <section className="px-4 pt-[10px] md:px-[25px]">
       <h2 className="text-[22px] font-bold leading-none text-wine">Our Promise</h2>
       <p className="mt-1 text-[10px] font-medium text-wine">
         There&apos;s no secret spell – only honest the work!
       </p>
-      <div className="mt-[26px] flex gap-[32px]">
-        <div className="w-[268px] space-y-[15px]">
-          <div className="h-[134px] rounded-[10px] bg-[#fdefee] p-3">
+      <div className="mt-[26px] flex flex-col gap-5 md:flex-row md:gap-[32px]">
+        <div className="space-y-[15px] md:w-[268px] md:shrink-0">
+          <div className="rounded-[10px] bg-[#fdefee] p-3 md:h-[134px]">
             <p className="text-[10px] font-semibold text-wine">
               A glimpse of no secret spell – only honest work!
             </p>
@@ -40,8 +40,14 @@ export function OurPromise() {
               ))}
             </div>
           </div>
-          <div className="flex h-[144px] items-center gap-[10px] rounded-[10px] bg-[#fdefee] p-[10px]">
-            <Image src="/images/ticket.jpg" alt="Magical ticket" width={264} height={222} className="h-[62px] w-[74px] shrink-0 animate-bounce object-cover" />
+          <div className="flex items-center gap-[10px] rounded-[10px] bg-[#fdefee] p-[10px] md:h-[144px]">
+            <Image
+              src="/images/ticket.jpg"
+              alt="Magical ticket"
+              width={300}
+              height={294}
+              className="h-auto w-[84px] shrink-0 [mask-image:radial-gradient(ellipse_at_center,#000_52%,transparent_100%)]"
+            />
             <div>
               <p className="whitespace-nowrap text-[12.5px] font-extrabold uppercase text-wine">
                 The Magical Ticket
@@ -76,7 +82,7 @@ export function OurPromise() {
         </div>
         <div className="grid flex-1 grid-cols-2 gap-x-[9px] gap-y-[11px]">
           {gallery.map((src) => (
-            <div key={src} className="group h-[111px] overflow-hidden rounded-[10px]">
+            <div key={src} className="group h-[130px] overflow-hidden rounded-[10px] md:h-[111px]">
               <Image
                 src={src}
                 alt="Dakingo cakes"

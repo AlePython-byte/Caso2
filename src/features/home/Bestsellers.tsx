@@ -4,15 +4,15 @@ import { bestsellers } from "@/data/content";
 
 export function Bestsellers() {
   return (
-    <section className="px-[25px] pt-[22px]">
+    <section className="px-4 pt-[22px] md:px-[25px]">
       <h3 className="text-[15px] font-bold text-wine">
         Bestsellers from Across the Country
       </h3>
-      <div className="mt-[17px] flex gap-[11px]">
+      <div className="mt-[17px] grid grid-cols-2 gap-[11px] md:flex">
         {bestsellers.map((p) => (
           <article
             key={p.name}
-            className="group relative h-[138px] w-[143px] cursor-pointer rounded-[10px] bg-white p-2 shadow-[0_2px_10px_rgba(157,31,42,0.12)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(157,31,42,0.25)]"
+            className="group relative h-[138px] w-full cursor-pointer rounded-[10px] bg-white p-2 shadow-[0_2px_10px_rgba(157,31,42,0.12)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(157,31,42,0.25)] md:w-[143px]"
           >
             <Heart
               size={9}
