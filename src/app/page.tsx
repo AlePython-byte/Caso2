@@ -11,7 +11,7 @@ export default function HomePage() {
       <Header />
       <Hero />
       <div className="bg-blush">
-        <div className="relative z-10 mx-4 -mt-[72px] rounded-t-[28px] bg-[#fff8f6] pb-[6px] shadow-[0_-4px_20px_rgba(157,31,42,0.08)]">
+        <div className="relative z-10 mx-4 -mt-[72px] rounded-[28px] bg-[#fff9f6] pb-[21px] shadow-[0_-4px_20px_rgba(157,31,42,0.08)]">
           <Menu />
           <Bestsellers />
           <OurPromise />

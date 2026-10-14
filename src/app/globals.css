@@ -9,6 +9,11 @@
   --font-sans: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
 
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+
 body {
   background: var(--color-cream);
   color: #3b1a1a;

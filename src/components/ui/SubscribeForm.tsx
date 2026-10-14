@@ -8,7 +8,7 @@ export function SubscribeForm() {
 
   return (
     <form
-      className="flex flex-1 items-center gap-3"
+      className="flex flex-1 items-center gap-[6px]"
       onSubmit={(e) => {
         e.preventDefault();
         if (!email.trim()) return;

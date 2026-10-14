@@ -26,7 +26,7 @@ export function Hero() {
         <p className="-mt-[1px] text-[17px] font-medium leading-tight">
           Satisfy Your Sweet Cravings
         </p>
-        <span className="mt-[20px] inline-block animate-pulse cursor-pointer rounded-full bg-wine-dark px-[14px] py-[6px] text-[17px] font-extrabold transition hover:scale-110">
+        <span className="mt-[20px] inline-block animate-[soft-pulse_2.4s_ease-in-out_infinite] cursor-pointer rounded-full bg-wine-dark px-[14px] py-[6px] text-[17px] font-extrabold transition hover:scale-110">
           SAVE 20%
         </span>
       </div>

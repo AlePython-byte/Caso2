@@ -16,7 +16,7 @@ export function Header() {
           </span>
         </div>
       </div>
-      <nav className="flex h-[43px] items-center justify-between border-t border-wine/10 px-[40px] text-[10px] font-semibold text-wine">
+      <nav className="flex h-[43px] items-center justify-between border-t border-wine/10 px-[40px] text-[10px] font-medium text-wine">
         {navItems.map((item, i) => (
           <a key={i} href="#" className="transition hover:-translate-y-0.5 hover:underline">
             {item}

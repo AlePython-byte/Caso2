@@ -16,7 +16,7 @@ export function Bestsellers() {
           >
             <Heart
               size={9}
-              className="absolute left-[10px] top-[10px] fill-wine text-wine"
+              className="absolute left-[9px] top-[58px] fill-wine text-wine"
             />
             <div className="mx-auto h-[74px] w-[100px] overflow-hidden rounded">
               <Image
@@ -24,10 +24,10 @@ export function Bestsellers() {
                 alt={p.name}
                 width={200}
                 height={148}
-                className="h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                className="h-full w-full object-contain transition duration-300 group-hover:scale-110"
               />
             </div>
-            <p className="mt-[6px] text-[9px] font-bold leading-[11px] text-wine">
+            <p className="mt-[6px] text-[9px] font-semibold leading-[11px] text-wine/90">
               {p.name}
             </p>
             <p className="mt-[2px] text-[9px] font-bold text-wine">₹{p.price}</p>

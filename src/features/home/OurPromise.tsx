@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ChefHat, Ticket, Truck } from "lucide-react";
+import { ChefHat, Truck } from "lucide-react";
 import { gallery } from "@/data/content";
 
 const stats = [
@@ -9,7 +9,7 @@ const stats = [
   { label: "BAKED FRESH", icon: <ChefHat size={20} /> },
 ];
 
-const avatarColors = ["#c98a6b", "#7a4a3a", "#d4a373", "#3a2a2a", "#5a4a6a"];
+const avatars = [1, 2, 3, 4, 5].map((n) => `/images/avatar-${n}.jpg`);
 
 export function OurPromise() {
   return (
@@ -20,7 +20,7 @@ export function OurPromise() {
       </p>
       <div className="mt-[26px] flex gap-[32px]">
         <div className="w-[268px] space-y-[15px]">
-          <div className="h-[134px] rounded-[10px] bg-[#fbe2e0] p-3">
+          <div className="h-[134px] rounded-[10px] bg-[#fdefee] p-3">
             <p className="text-[10px] font-semibold text-wine">
               A glimpse of no secret spell – only honest work!
             </p>
@@ -28,22 +28,22 @@ export function OurPromise() {
               {stats.map((s) => (
                 <div
                   key={s.label}
-                  className="flex w-[56px] flex-col items-center gap-[6px] text-center"
+                  className="flex w-[52px] flex-col items-center gap-[6px] text-center"
                 >
                   <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full border-[1.5px] border-wine text-wine transition duration-300 hover:bg-wine hover:text-white">
                     {s.icon}
                   </span>
-                  <span className="text-[6.5px] font-bold leading-[8px] text-wine">
+                  <span className="max-w-[44px] text-[7px] font-bold leading-[8.5px] text-wine">
                     {s.label}
                   </span>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex h-[144px] items-center gap-3 rounded-[10px] bg-[#fbe2e0] p-3">
-            <Ticket size={44} className="animate-bounce text-amber-500" />
+          <div className="flex h-[144px] items-center gap-[10px] rounded-[10px] bg-[#fdefee] p-[10px]">
+            <Image src="/images/ticket.jpg" alt="Magical ticket" width={264} height={222} className="h-[62px] w-[74px] shrink-0 animate-bounce object-cover" />
             <div>
-              <p className="text-[13px] font-extrabold uppercase text-wine">
+              <p className="whitespace-nowrap text-[12.5px] font-extrabold uppercase text-wine">
                 The Magical Ticket
               </p>
               <p className="mt-1 text-[8px] leading-[10px] text-wine">
@@ -56,13 +56,16 @@ export function OurPromise() {
               </button>
             </div>
           </div>
-          <div className="flex h-[48px] items-center gap-3 rounded-[10px] bg-[#fbe2e0] px-3">
+          <div className="flex h-[48px] items-center gap-3 rounded-[10px] bg-[#fdefee] px-3">
             <div className="flex -space-x-1">
-              {avatarColors.map((c) => (
-                <span
-                  key={c}
-                  className="h-[22px] w-[22px] rounded-full border-2 border-white"
-                  style={{ background: c }}
+              {avatars.map((src) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt="Dakingo customer"
+                  width={72}
+                  height={72}
+                  className="h-[24px] w-[24px] rounded-full border-2 border-white object-cover"
                 />
               ))}
             </div>
