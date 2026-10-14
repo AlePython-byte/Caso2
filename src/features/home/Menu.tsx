@@ -18,7 +18,7 @@ const icons = {
 
 export function Menu() {
   return (
-    <section className="flex justify-between px-[28px] pt-[34px]">
+    <section className="flex justify-between pl-[25px] pr-[47px] pt-[30px]">
       <div>
         <h2 className="text-[22px] font-bold leading-none text-wine">Menu</h2>
         <p className="mt-1 text-[10px] font-medium text-wine">
@@ -35,13 +35,13 @@ export function Menu() {
           ))}
         </div>
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-[13px]">
         {menuCategories.map((c) => {
           const Icon = icons[c.icon];
           return (
             <div
               key={c.label}
-              className="flex h-[77px] w-[78px] flex-col items-center justify-center gap-2 rounded-[14px] bg-white shadow-[0_2px_8px_rgba(157,31,42,0.12)]"
+              className="flex h-[72px] w-[78px] flex-col items-center justify-center gap-2 rounded-[14px] bg-white shadow-[0_2px_8px_rgba(157,31,42,0.12)]"
             >
               <Icon size={26} className="text-wine" strokeWidth={1.5} />
               <span className="text-[7.5px] font-bold text-wine">{c.label}</span>

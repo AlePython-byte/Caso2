@@ -4,11 +4,11 @@ import { bestsellers } from "@/data/content";
 
 export function Bestsellers() {
   return (
-    <section className="px-[28px] pt-[34px]">
+    <section className="px-[25px] pt-[22px]">
       <h3 className="text-[15px] font-bold text-wine">
         Bestsellers from Across the Country
       </h3>
-      <div className="mt-[18px] flex gap-[11px]">
+      <div className="mt-[17px] flex gap-[11px]">
         {bestsellers.map((p) => (
           <article
             key={p.name}

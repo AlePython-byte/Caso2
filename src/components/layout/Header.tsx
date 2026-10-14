@@ -4,8 +4,8 @@ import { navItems } from "@/data/content";
 export function Header() {
   return (
     <header className="bg-blush">
-      <div className="flex h-[66px] items-center justify-between px-[40px]">
-        <span className="text-[25px] font-bold tracking-tight text-wine">
+      <div className="flex h-[42px] items-center justify-between px-[40px]">
+        <span className="text-[23px] font-bold tracking-tight text-wine">
           Dakingo
         </span>
         <div className="flex items-center gap-4">
@@ -20,7 +20,7 @@ export function Header() {
           </span>
         </div>
       </div>
-      <nav className="flex h-[41px] items-center justify-between border-t border-wine/10 px-[40px] text-[10px] font-semibold text-wine">
+      <nav className="flex h-[43px] items-center justify-between border-t border-wine/10 px-[40px] text-[10px] font-semibold text-wine">
         {navItems.map((item, i) => (
           <a key={i} href="#">
             {item}

@@ -13,14 +13,14 @@ const avatarColors = ["#c98a6b", "#7a4a3a", "#d4a373", "#3a2a2a", "#5a4a6a"];
 
 export function OurPromise() {
   return (
-    <section className="px-[28px] pt-[24px]">
+    <section className="px-[25px] pt-[10px]">
       <h2 className="text-[22px] font-bold leading-none text-wine">Our Promise</h2>
       <p className="mt-1 text-[10px] font-medium text-wine">
         There&apos;s no secret spell – only honest the work!
       </p>
-      <div className="mt-[22px] flex gap-[22px]">
-        <div className="w-[300px] space-y-[14px]">
-          <div className="rounded-[10px] bg-[#fbe2e0] p-3">
+      <div className="mt-[26px] flex gap-[32px]">
+        <div className="w-[268px] space-y-[15px]">
+          <div className="h-[134px] rounded-[10px] bg-[#fbe2e0] p-3">
             <p className="text-[10px] font-semibold text-wine">
               A glimpse of no secret spell – only honest work!
             </p>
@@ -28,7 +28,7 @@ export function OurPromise() {
               {stats.map((s) => (
                 <div
                   key={s.label}
-                  className="flex w-[60px] flex-col items-center gap-[6px] text-center"
+                  className="flex w-[56px] flex-col items-center gap-[6px] text-center"
                 >
                   <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full border-[1.5px] border-wine text-wine">
                     {s.icon}
@@ -40,7 +40,7 @@ export function OurPromise() {
               ))}
             </div>
           </div>
-          <div className="flex items-center gap-3 rounded-[10px] bg-[#fbe2e0] p-3">
+          <div className="flex h-[144px] items-center gap-3 rounded-[10px] bg-[#fbe2e0] p-3">
             <Ticket size={44} className="text-amber-500" />
             <div>
               <p className="text-[13px] font-extrabold uppercase text-wine">
@@ -56,7 +56,7 @@ export function OurPromise() {
               </button>
             </div>
           </div>
-          <div className="flex items-center gap-3 rounded-[10px] bg-[#fbe2e0] px-3 py-[10px]">
+          <div className="flex h-[48px] items-center gap-3 rounded-[10px] bg-[#fbe2e0] px-3">
             <div className="flex -space-x-1">
               {avatarColors.map((c) => (
                 <span
@@ -71,7 +71,7 @@ export function OurPromise() {
             </span>
           </div>
         </div>
-        <div className="grid flex-1 grid-cols-2 gap-[9px]">
+        <div className="grid flex-1 grid-cols-2 gap-x-[9px] gap-y-[11px]">
           {gallery.map((src) => (
             <div key={src} className="h-[111px] overflow-hidden rounded-[10px]">
               <Image
